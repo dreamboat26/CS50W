@@ -62,4 +62,5 @@ This application is entitled School Registration System. This is a simple web-ba
      -  Edit Teacher Details
      -  Delete Teacher
  -  Logout
+ 
 Thanks!
