@@ -1,0 +1,24 @@
+{% extends 'base/base.html' %} {% load static %} {% load humanize %} {% block content %}
+<div class="row">
+    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 py-3">
+        <div class="card rounded-0 shadow">
+            <div class="card-body">
+                <div class="container-fluid">
+                    <h6>Total Teachers</h6>
+                    <h5 class="text-right"><b>{{ teachers|intcomma }}</b></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 py-3">
+        <div class="card rounded-0 shadow">
+            <div class="card-body">
+                <div class="container-fluid">
+                    <h6>Total Students</h6>
+                    <h5 class="text-right"><b>{{ students|intcomma }}</b></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

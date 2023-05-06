@@ -1,0 +1,61 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col-lg-6">
+        <div class="card">
+            <div class="card-header">
+                 <i class="fa fa-align-justify"></i> Teacher Information
+            </div>
+            <div class="card-body">
+                <tbody>
+                    <tr>
+                        <td><b>Full Name:</b> {{ single_teacher.name }}</td>
+                        <br>
+                        <td><b>Email:</b> {{ single_teacher.email }}</td>
+                        <br>
+                        <td><b>Age:</b> {{ single_teacher.age }}</td>
+                        <br>
+                        <td><b>Gender:</b> {{ single_teacher.gender }}</td>
+                        <br>
+                        <td><b>Joining Date:</b> {{ single_teacher.joining_date }}</td>
+                        <br>
+                        <td><b>Passing Year:</b> {{ single_teacher.passing_year }}</td>
+                    </tr>
+                </tbody>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="card">
+            <div class="card-header">
+                 <i class="fa fa-align-justify"></i> Teachers School Information
+            </div>
+            <div class="card-body">
+
+                <h6>Department: {{ single_teacher.dept_type }}</h6>
+                <h6>Subject: {{ single_teacher.sub_type }}</h6>
+                <h6>Salary:                 <h6>Salary: Php {{ single_teacher.salary }} /-</h6>
+                {{ single_teacher.salary }} /-</h6>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-6">
+        <div class="card">
+            <div class="card-header">
+                 <i class="fa fa-align-justify"></i> Teachers Image
+            </div>
+            <div class="card-body">
+                <img src="{{ single_teacher.teacher_img.url }}" class="img-fluid" />
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+

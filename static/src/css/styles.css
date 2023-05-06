@@ -1,0 +1,23 @@
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .social-media-icons {
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .social-media-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #fff;
+  }
+  
+  .social-media-icons a:hover {
+    color: #00aced; /* change color on hover */
+  }
+  
+  
